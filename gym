@@ -1,0 +1,45 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+
+	int menu, month;
+	do
+	{
+		cout << "This is a Gym Menu" << endl;
+		cout << "Please enter your choice" << endl;
+		cout << "1.Adult Gym" << endl;
+		cout << "2.Kids Gym" << endl;
+		cout << "3.Senior Citizen Gym" << endl;
+		cout << "4.Exit the menu" << endl;
+		cin >> menu;
+		switch (menu) {
+		case 1:
+			cout << "Adult Gym price is RM 50" << endl;
+			cout << "How many month you want to use?" << endl;
+			cin >> month;
+			cout << "Total price is RM" << month*50 << endl;
+			break;
+		case 2:
+			cout << "Kids Gym price is RM 20" << endl;
+			cout << "How many month you want to use?" << endl;
+			cin >> month;
+			cout << "Total price is RM" << month * 20 << endl;
+			break;
+		case 3:
+			cout << "Senior Citizen Gym price is Free" << endl;
+			break;
+		case 4:
+			cout << "Exit" << endl;
+			break;
+		default:
+			cout << "Invalide Selection" << endl;
+			break;
+		}
+	} while (menu != 1 && menu != 2 && menu != 3 && menu != 4);
+
+	return 0;
+}
